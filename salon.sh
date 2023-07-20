@@ -17,7 +17,7 @@ MENU_SERVICES(){
 
   read SERVICE_ID_SELECTED
 
-  if [[ ! $SERVICE_ID_SELECTED =~ [1-6] ]]
+  if [[ ! $SERVICE_ID_SELECTED =~ ^[1-6]$ ]]
   then
     MENU_SERVICES "Please choose a correct value."
   else
